@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne"/>
+    <title>Links website</title>
+    <style>
+      body {
+        background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80); /* The image used for background*/
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-position: center; /* Center the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        font-family: "Syne", sans-serif;
+      }
+
+      .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .image-container {
+        text-align: center;
+        width: 100%;
+      }
+
+      .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .link {
+        min-width: 50% !important;
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          max-width: 1140px;
+        }
+      }
+      @media (min-width: 992px) {
+        .container {
+          max-width: 960px;
+        }
+      }
+      @media (min-width: 768px) {
+        .container {
+          max-width: 720px;
+        }
+
+        .link {
+          width: 100%;
+        }
+      }
+      @media (min-width: 576px) {
+        .container {
+          max-width: 540px;
+        }
+      }
+
+      .w3-yellow,
+      .w3-hover-purple:hover,
+      .w3-text-black {
+        color: rgba(255, 204, 217) !important;
+        background-color: rgba(255, 255, 179, 0.3) !important;
+      }
+    </style>
+  </head>
+
+  <body class="w3-white">
+    <!-- Content container -->
+    <div class="container">
+      <!-- Image and name container. Change to your picture here. -->
+      <div class="image-container">
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.hdqwalls.com%2Fdownload%2Fdarth-vader-5k-3o-2560x1440.jpg&f=1&nofb=1&ipt=6b0d55d2487c64594c3cde05aff8f75e1079c0935010260f5547cb8476ba443b&ipo=images"
+          class="w3-margin"
+          alt="Person"
+          max-width="100%"
+          height="150px"
+          style="border-radius: 50%"
+        />
+
+        <!-- Content. Add bio. -->
+        <div class="w3-text-white">
+          <p class="w3-large"><strong>Join the dark side( we have cookies).</strong></p>
+        </div>
+
+        <!-- Links section 1. Replace the # inside of the "" with your links. -->
+        <div class="links-container">
+          <a href="#" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-red link" target="_blank">Gallery</a>
+          <a href="#" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-red link" target="_blank">Shop</a>
+          <a href="#" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-red link" target="_blank">Jedi master classes</a>
+          <a href="#" class="w3-button w3-hover-pink w3-large w3-round-xlarge w3-red link" target="_blank">Blog</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog entry. Change the text and link to your most recent post. -->
+    <div class="w3-content w3-padding-32 w3-center" style="padding-right: 10px; padding-left: 10px; max-width: 600px">
+      <p class="w3-text-white"><strong>Most recent blog post:</strong></p>
+      <h3 class="w3-text-white">Title heading</h3>
+      <h5 class="w3-text-white">Article description, 01.01.2022</h5>
+      <p class="w3-text-white">
+       Welcome to Darth Vader's blog, Dark Lord of the Sith and right hand of the Emperor! Here, dive into the ruthless universe of the Dark Side, uncover the behind-the-scenes of running a galactic empire, and learn what it’s like to strangle someone from a distance. If you want to discover the secrets of absolute power (and how to properly maintain your black armor), you’ve come to the right place. May the Force be with me!
+      </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p>
+            <button class="w3-button w3-red w3-padding-large w3-round-xlarge">
+              <b>READ MORE »</b>
+            </button>
+          </p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p>
+            <span class="w3-padding-large w3-right w3-text-white">
+              <b>Comments</b>
+              <span class="w3-badge w3-yellow">
+                3
+              </span>
+            </span>
+          </p>
+        </div>
+      </div>
+      <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+      <footer class="w3-container w3-center w3-padding-48 w3-margin-top">
+        <a class="w3-margin-bottom" href="https://www.w3schools.com/spaces" title="This website was made with W3schools Spaces. Make your own free website today!" target="_blank">
+          <img style="filter: brightness(0) invert(1);" src="https://spaces.w3schools.com/logo_4x.png" width="50" height="50">
+        </a> 
+      <!-- End footer -->
+      </footer>
+    </div>
+  </body>
+</html>
